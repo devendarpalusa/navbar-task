@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a{ text-decoration: none; 
-        }
-#ms{ width:1500px;
-    height:100px;
-    position: fixed;
-
-
-}
+      #ms{display:flex;
+        justify-content:space-evenly;
+        background-color: red;
+        color:white;
+        line-height: 50px;
+      }
+     a{ text-decoration: none; padding:20px; border:2px;
+    margin:5px;}
+     a:hover{
+color:blue;
+background-color: black;}
+     @media only screen and (max-width:600px){  #ms{  flex-direction:column;}
+     }
+     @media only screen and (min-width:600px){ body{background-color:yellowgreen;}}
     </style>
 </head>
 <body>
-    <div id="ms">
-    <h1>ap constructions</h1>
-  <h1><a>project</a></h1> 
-  <h1><a> about</a></h1>
-  <h1><a>contacts</a></h1>
-  <h1><a>help</a></h1>
+  <div id="ms">
+      <a>AP CONSTRUCTION</a>
+      <a href="#">about</a>
+<a href="#">contact</a>
+<a href="#">projects</a>
+<a href='#'>help</a>
+  </div>
+  <div>
+    
   </div>
 </body>
 </html>
